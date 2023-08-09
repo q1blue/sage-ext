@@ -16,10 +16,10 @@ let analyzeBugPanel: vscode.WebviewPanel | undefined = undefined;
 let generateTestsPanel: vscode.WebviewPanel | undefined = undefined;
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "codeguru" is now active!');
+  console.log('Congratulations, your extension "sage" is now active!');
 
   let refactorDisposable = vscode.commands.registerCommand(
-    "codeguru.refactorCode",
+    "sage.refactorCode",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (editor) {
@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(refactorDisposable);
 
   let docDisposable = vscode.commands.registerCommand(
-    "codeguru.generateDoc",
+    "sage.generateDoc",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (editor) {
@@ -78,7 +78,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(docDisposable);
 
   let analyzeBugDisposable = vscode.commands.registerCommand(
-    "codeguru.analyzeBug",
+    "sage.analyzeBug",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (editor) {
@@ -108,7 +108,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(analyzeBugDisposable);
 
   let generateTestsDisposable = vscode.commands.registerCommand(
-    "codeguru.generateTests",
+    "sage.generateTests",
     async () => {
       const editor = vscode.window.activeTextEditor;
       if (editor) {
@@ -138,14 +138,14 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(generateTestsDisposable);
 
   context.subscriptions.push(
-    vscode.window.registerWebviewPanelSerializer("codeGuruRefactor", {
+    vscode.window.registerWebviewPanelSerializer("sageRefactor", {
       async deserializeWebviewPanel(webviewPanel: vscode.WebviewPanel) {
         webviewPanel.webview.html = generateWebviewContent(
           "Restored content or any placeholder content"
         );
         refactorPanel = vscode.window.createWebviewPanel(
-          "codeGuruRefactor",
-          "Code Guru Refactor",
+          "sageRefactor",
+          "Sage Refactor",
           vscode.ViewColumn.Two,
           {
             enableScripts: true,

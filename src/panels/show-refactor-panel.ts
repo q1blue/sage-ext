@@ -14,8 +14,8 @@ export function showRefactorPanel(
     refactorPanel.reveal(vscode.ViewColumn.Two);
   } else {
     refactorPanel = vscode.window.createWebviewPanel(
-      "codeGuruRefactor",
-      "Code Guru Refactor",
+      "sageRefactor",
+      "Sage Refactor",
       vscode.ViewColumn.Two,
       {
         enableScripts: true,

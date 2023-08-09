@@ -11,8 +11,8 @@ export function showGenerateTestsPanel(
     refactorPanel.reveal(vscode.ViewColumn.Two);
   } else {
     refactorPanel = vscode.window.createWebviewPanel(
-      "codeGuruGenerateTests",
-      "Code Guru Generate Tests",
+      "sageGenerateTests",
+      "Sage Generate Tests",
       vscode.ViewColumn.Two,
       {
         enableScripts: true,

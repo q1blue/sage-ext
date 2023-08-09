@@ -14,8 +14,8 @@ export function showAnalyzeBugPanel(
     analyzePanel.reveal(vscode.ViewColumn.Two);
   } else {
     analyzePanel = vscode.window.createWebviewPanel(
-      "codeGuruAnalyze",
-      "Code Guru Analysis",
+      "sageAnalyze",
+      "Sage Analysis",
       vscode.ViewColumn.Two,
       {
         enableScripts: true,

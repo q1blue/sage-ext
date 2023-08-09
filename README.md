@@ -1,6 +1,6 @@
-# CodeGuru VS Code Extension
+# Sage VS Code Extension
 
-CodeGuru is a VS Code extension that provides developers with a suite of tools to enhance their coding experience. With features like code refactoring, bug analysis, test generation, and documentation generation, CodeGuru aims to streamline the development process and improve code quality.
+Sage is a VS Code extension that provides developers with a suite of tools to enhance their coding experience. With features like code refactoring, bug analysis, test generation, and documentation generation, Sage aims to streamline the development process and improve code quality.
 
 ## Features
 1. **Code Refactoring**: Get suggestions to improve and refactor your code.
@@ -14,25 +14,25 @@ Open the command palette (**Ctrl+Shift+P** or **Cmd+Shift+P** on *macOS*) and se
 #### Refactor Code
 To refactor your code, open the command pallet and run:
 ```
-CodeGuru: Refactor Code
+Sage: Refactor Code
 ```
 
 #### Analyze for Bugs
 To analyze your code for potential bugs, open the command palette and run:
 ```
-CodeGuru: Analyze Bug
+Sage: Analyze Bug
 ```
 
 #### Generate Tests
 To generate tests for your code, open the command palette and run:
 ```
-CodeGuru: Generate Tests
+Sage: Generate Tests
 ```
 
 #### Generate Documentation
 To generate markdown documentation for your code, open the command palette and run:
 ```
-CodeGuru: Generate Documentation
+Sage: Generate Documentation
 ```
 
 ## Installation
@@ -55,7 +55,7 @@ vsce package
 ```
 5. Install the extension to VS Code:
 ```bash
-code --install-extension codeguru-[version].vsix
+code --install-extension sage-[version].vsix
 ```
 
 ## Configuration

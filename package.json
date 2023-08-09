@@ -1,6 +1,6 @@
 {
-  "name": "code-guru",
-  "displayName": "code-guru",
+  "name": "sage",
+  "displayName": "sage",
   "description": "AI to help developers",
   "version": "1.1.0",
   "engines": {
@@ -12,44 +12,44 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "repository": {
-    "url": "https://github.com/thiagoadsix/code-guru-ext"
+    "url": "https://github.com/thiagoadsix/sage-ext"
   },
-  "publisher": "CodeGuru",
+  "publisher": "Sage",
   "contributes": {
     "commands": [
       {
-        "command": "codeguru.refactorCode",
-        "title": "CodeGuru: refactor code"
+        "command": "Sage.refactorCode",
+        "title": "Sage: refactor code"
       },
       {
-        "command": "codeguru.generateDoc",
-        "title": "CodeGuru: generate documentation"
+        "command": "Sage.generateDoc",
+        "title": "Sage: generate documentation"
       },
       {
-        "command": "codeguru.analyzeBug",
-        "title": "CodeGuru: analyze bug"
+        "command": "Sage.analyzeBug",
+        "title": "Sage: analyze bug"
       },
       {
-        "command": "codeguru.generateTests",
-        "title": "CodeGuru: generate tests"
+        "command": "Sage.generateTests",
+        "title": "Sage: generate tests"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "codeguru.refactorCode",
+          "command": "sage.refactorCode",
           "when": "editorHasSelection"
         },
         {
-          "command": "codeguru.generateDoc",
+          "command": "sage.generateDoc",
           "when": "editorHasSelection"
         },
         {
-          "command": "codeguru.analyzeBug",
+          "command": "sage.analyzeBug",
           "when": "editorHasSelection"
         },
         {
-          "command": "codeguru.generateTests",
+          "command": "sage.generateTests",
           "when": "editorHasSelection"
         }
       ]
