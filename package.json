@@ -2,7 +2,7 @@
   "name": "sage",
   "displayName": "sage",
   "description": "AI to help developers",
-  "version": "1.1.0",
+  "version": "0.0.0",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -18,19 +18,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "Sage.refactorCode",
+        "command": "sage.refactorCode",
         "title": "Sage: refactor code"
       },
       {
-        "command": "Sage.generateDoc",
+        "command": "sage.generateDoc",
         "title": "Sage: generate documentation"
       },
       {
-        "command": "Sage.analyzeBug",
+        "command": "sage.analyzeBug",
         "title": "Sage: analyze bug"
       },
       {
-        "command": "Sage.generateTests",
+        "command": "sage.generateTests",
         "title": "Sage: generate tests"
       }
     ],
