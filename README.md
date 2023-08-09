@@ -61,5 +61,39 @@ code --install-extension sage-[version].vsix
 ## Configuration
 By default, the extension connects to **http://localhost:3000** for backend services. You can change this by updating the `BASE_URL` constant in extension.ts
 
+## Setting Up the Backend Server
+To ensure the Sage extension functions correctly, you'll need to set up and run the backend server provided in this repository: [Sage Backend Repository](https://github.com/thiagoadsix/sage).
+
+#### Steps:
+1. Clone the backend repository:
+```bash
+git clone https://github.com/thiagoadsix/sage.git
+```
+2. Navigate to the cloned directory:
+```bash
+cd sage
+```
+3. Select the version requried version for NodeJS:
+```bash
+nvm use
+```
+4. Install the required dependencies:
+```bash
+npm i
+```
+5. Before starting the server, you need to set up the environment variables. Create a `.env` file in the root directory of the project and add the following:
+```makefile
+OPEN_API_KEY=YOUR_OPENAI_API_KEY
+OPEN_API_ORG=YOUR_OPENAI_ORG_ID  # This is optional
+```
+Replace YOUR_OPENAI_API_KEY with your actual OpenAI API key and YOUR_OPENAI_ORG_ID with your OpenAI organization ID (if you have one).
+
+6. Once the environment variables are set, you can start the server:
+```bash
+npm run start
+```
+
+The server will start and by default listen on `http://localhost:3000`. Ensure the BASE_URL in the Sage extension is set to this URL or update it accordingly if you change the server's listening address.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
