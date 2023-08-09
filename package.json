@@ -3,6 +3,7 @@
   "displayName": "sage-ai",
   "description": "AI to help developers",
   "version": "1.2.0",
+  "icon": "./assets/icons/sage-logo.png",
   "engines": {
     "vscode": "^1.80.0"
   },
